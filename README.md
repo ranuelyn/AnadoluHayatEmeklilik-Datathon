@@ -76,7 +76,7 @@ Custom Metric Katsayıları:
 +----+-------+
 
 
-# Solution Approach and Models
+# Solution Approach and Models
 
 Our strategy for tackling the challenges presented by the Anadolu Hayat Emeklilik Datathon 2024 was comprehensive, employing advanced machine learning techniques to predict customer preferences for retirement and life insurance products accurately. Below is an overview of our approach and the sophisticated models we utilized:
 
