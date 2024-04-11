@@ -1,6 +1,8 @@
 # Anadolu Hayat Emeklilik Datathon
 Anadolu Hayat Emeklilik Datathon 2024
 
+(I am not authorized to share data due to competition confidentiality.)
+
 Anadolu Hayat Emeklilik, a pioneer in Individual Retirement and Life Insurance, is hosting its second Datathon. This event challenges you to develop the best predictive methods for real-world problems using real data, showcasing your data science skills.
 
 # Evaluation
@@ -12,68 +14,68 @@ The competition's success metric will be the weighted F1 Score. The top 10 parti
 The dataset provides detailed features about customers' retirement and insurance policies:
 
 Dataset Description
-MUSTERI_ID : Müşterileri ayırt eden unique ID'ler.
-LABEL: Müşterinin aldığı Hayat sigortası ürününün çeşidi.
-FLAG:Verinin ait olduğu ay.
-PP_CINSIYET: Sözleşme sahibinin cinsiyeti.
-1: Erkek
-2: Kadın
-PP_YAS : Sözleşme sahibinin ay bazlı olarak yaşı.
-PP_MESLEK : Sözleşme sahibinin mesleği.
-PP_MUSTERI_SEGMENTI : Sözleşme sahibinin müşteri segmenti.
-101: A segment
-102: B segment
-103: C segment
-104: D segment
-105: E segment
-106: F segment
-PP_UYRUK: Sözleşme sahibinin uyruk bilgisi.
-1:TC Vatandaşı
-2:Mavi Kart
-3:Yabancı Uyruklu
-IL:Sözleşme sahiplerinin yaşadığı illere ait plaka kodu.( 0 = Yurtdışı)
-SORU_YATIRIM_KARAKTERI_CVP: Sözleşme sahibinin ankete verdiği cevaplara göre belirlenen yatırım karakteri.
-SORU_YATIRIM_KARAKTERI_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
-SORU_MEDENI_HAL_CVP: Sözleşme sahibinin ankete verdiği cevaba göre medeni durumu.
-SORU_MEDENI_HAL_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
-SORU_EGITIM_CVP: Sözleşme sahibinin ankete verdiği cevaplara göre eğitim durumu.
-SORU_EGITIM_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
-SORU_GELIR_CVP: Sözleşme sahibinin ankete verdiği cevaba göre gelir durumu.
-SORU_GELIR_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
-SORU_COCUK_SAYISI_CVP: Sözleşme sahibinin ankete verdiği cevaba göre çocuk sayısı.
-SORU_COCUK_SAYISI_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
-BES_AYRILMA_TALEP_ADET : Sözleşme sahibinin BES hesabından ayrılmak için açtığı talep sayısı.
-ODEMEME_TALEP_ADET : Sözleşme sahibinin son 1 sene içerisinde kaç kez ödememe talimatı verdiğini gösterir.
-HAYAT_AYRILMA_TALEP_ADET : Sözleşme sahibinin Hayat sigortasından ayrılmak için açtığı talep sayısı.
-BILGI_TALEP_ADET : Sözleşme sahibinin sözleşmesi için kaç kez bilgi talep ettiğini gösterir.
-VADE_TUTAR_0 - VADE_TUTAR_11 : Sözleşme sahibinin sahip olduğu ürünlerin son 12 aya ait toplam vade tutarları
-ODEME_TUTAR_0 - ODEME_TUTAR_11 : Sözleşme sahibinin sahip olduğu ürünler için son 12 ayda yaptığı ödeme tutarları
-SON_AY_KATKI_MIKTARI : Sözleşme sahibinin son bir ay içinde yaptığı ek katkı ödemelerinin TL cinsinden toplam miktarı
-SON_AY_KATKI_ADET : Sözleşme sahibinin son bir ay içinde yaptığı ek katkı ödemelerinin adedi
-SON_CEYREK_KATKI_MIKTARI : Sözleşme sahibinin son üç ay içinde yaptığı ek katkı ödemelerinin TL cinsinden toplam miktarı
-SON_CEYREK_KATKI_ADET : Sözleşme sahibinin son üç ay içinde yaptığı ek katkı ödemelerinin adedi
-SON_SENE_KATKI_MIKTARI : Sözleşme sahibinin son bir sene içinde yaptığı ek katkı ödemelerinin TL cinsinden toplam miktarı
-SON_SENE_KATKI_ADET : Sözleşme sahibinin son bir sene içinde yaptığı ek katkı ödemelerinin adedi
-ANAPARA: Sözleşme sahibinin TL cinsinden toplam yatırdığı para miktarı.
-GETIRI : Sözleşme sahibinin TL cinsinden yatirdiği paradan elde ettiği getiri.
-BU1 - BU24: BES ÜRÜN 1 - 24, Kişinin kolonda belirtilen BES ürününe sahip olup olmama durumu (Ürün özellikleri ayrı bir dokumanda verilmiştir)
-HU1 - HU19: HAYAT ÜRÜN 1 - 19, Kişinin kolonda belirtilen Hayat ürününe sahip olup olmama durumu (Ürün özellikleri ayrı bir dokumanda verilmiştir)
-AKTIF_ILK_POLICE_RG: Sözleşme sahibinin aktif olan poliçeleri arasından en eskisinin üstünden geçen süre (ay).
-
-Custom Metric Katsayıları:
-
-+----+-------+
-|ÜRÜN|KATSAYI|
-+----+-------+
-|HU06|0.0385 |
-|HU07|0.0328 |
-|HU11|0.2791 |
-|HU12|0.1812 |
-|HU14|0.0113 |
-|HU15|0.2952 |
-|HU19|0.1614 |
-| UA |0.0001 |
-+----+-------+
+  MUSTERI_ID : Müşterileri ayırt eden unique ID'ler.
+  LABEL: Müşterinin aldığı Hayat sigortası ürününün çeşidi.
+  FLAG:Verinin ait olduğu ay.
+  PP_CINSIYET: Sözleşme sahibinin cinsiyeti.
+  1: Erkek
+  2: Kadın
+  PP_YAS : Sözleşme sahibinin ay bazlı olarak yaşı.
+  PP_MESLEK : Sözleşme sahibinin mesleği.
+  PP_MUSTERI_SEGMENTI : Sözleşme sahibinin müşteri segmenti.
+  101: A segment
+  102: B segment
+  103: C segment
+  104: D segment
+  105: E segment
+  106: F segment
+  PP_UYRUK: Sözleşme sahibinin uyruk bilgisi.
+  1:TC Vatandaşı
+  2:Mavi Kart
+  3:Yabancı Uyruklu
+  IL:Sözleşme sahiplerinin yaşadığı illere ait plaka kodu.( 0 = Yurtdışı)
+  SORU_YATIRIM_KARAKTERI_CVP: Sözleşme sahibinin ankete verdiği cevaplara göre belirlenen yatırım karakteri.
+  SORU_YATIRIM_KARAKTERI_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
+  SORU_MEDENI_HAL_CVP: Sözleşme sahibinin ankete verdiği cevaba göre medeni durumu.
+  SORU_MEDENI_HAL_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
+  SORU_EGITIM_CVP: Sözleşme sahibinin ankete verdiği cevaplara göre eğitim durumu.
+  SORU_EGITIM_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
+  SORU_GELIR_CVP: Sözleşme sahibinin ankete verdiği cevaba göre gelir durumu.
+  SORU_GELIR_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
+  SORU_COCUK_SAYISI_CVP: Sözleşme sahibinin ankete verdiği cevaba göre çocuk sayısı.
+  SORU_COCUK_SAYISI_RG: Sözleşme sahibinin ankette verdiği cevabın üstünden geçen süre (ay).
+  BES_AYRILMA_TALEP_ADET : Sözleşme sahibinin BES hesabından ayrılmak için açtığı talep sayısı.
+  ODEMEME_TALEP_ADET : Sözleşme sahibinin son 1 sene içerisinde kaç kez ödememe talimatı verdiğini gösterir.
+  HAYAT_AYRILMA_TALEP_ADET : Sözleşme sahibinin Hayat sigortasından ayrılmak için açtığı talep sayısı.
+  BILGI_TALEP_ADET : Sözleşme sahibinin sözleşmesi için kaç kez bilgi talep ettiğini gösterir.
+  VADE_TUTAR_0 - VADE_TUTAR_11 : Sözleşme sahibinin sahip olduğu ürünlerin son 12 aya ait toplam vade tutarları
+  ODEME_TUTAR_0 - ODEME_TUTAR_11 : Sözleşme sahibinin sahip olduğu ürünler için son 12 ayda yaptığı ödeme tutarları
+  SON_AY_KATKI_MIKTARI : Sözleşme sahibinin son bir ay içinde yaptığı ek katkı ödemelerinin TL cinsinden toplam miktarı
+  SON_AY_KATKI_ADET : Sözleşme sahibinin son bir ay içinde yaptığı ek katkı ödemelerinin adedi
+  SON_CEYREK_KATKI_MIKTARI : Sözleşme sahibinin son üç ay içinde yaptığı ek katkı ödemelerinin TL cinsinden toplam miktarı
+  SON_CEYREK_KATKI_ADET : Sözleşme sahibinin son üç ay içinde yaptığı ek katkı ödemelerinin adedi
+  SON_SENE_KATKI_MIKTARI : Sözleşme sahibinin son bir sene içinde yaptığı ek katkı ödemelerinin TL cinsinden toplam miktarı
+  SON_SENE_KATKI_ADET : Sözleşme sahibinin son bir sene içinde yaptığı ek katkı ödemelerinin adedi
+  ANAPARA: Sözleşme sahibinin TL cinsinden toplam yatırdığı para miktarı.
+  GETIRI : Sözleşme sahibinin TL cinsinden yatirdiği paradan elde ettiği getiri.
+  BU1 - BU24: BES ÜRÜN 1 - 24, Kişinin kolonda belirtilen BES ürününe sahip olup olmama durumu (Ürün özellikleri ayrı bir dokumanda verilmiştir)
+  HU1 - HU19: HAYAT ÜRÜN 1 - 19, Kişinin kolonda belirtilen Hayat ürününe sahip olup olmama durumu (Ürün özellikleri ayrı bir dokumanda verilmiştir)
+  AKTIF_ILK_POLICE_RG: Sözleşme sahibinin aktif olan poliçeleri arasından en eskisinin üstünden geçen süre (ay).
+  
+  Custom Metric Katsayıları:
+  
+  +----+-------+
+  |ÜRÜN|KATSAYI|
+  +----+-------+
+  |HU06|0.0385 |
+  |HU07|0.0328 |
+  |HU11|0.2791 |
+  |HU12|0.1812 |
+  |HU14|0.0113 |
+  |HU15|0.2952 |
+  |HU19|0.1614 |
+  | UA |0.0001 |
+  +----+-------+
 
 
 # Solution Approach and Models
